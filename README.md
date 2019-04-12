@@ -16,8 +16,10 @@
       Leftover
       
       int pageToCheck = (low + hi) / 2;
+      
             int comparison =
               findMe.compareTo( list_iAS.get( pageToCheck));
+              
             if( comparison == 0)   
                 return pageToCheck; 
                 
