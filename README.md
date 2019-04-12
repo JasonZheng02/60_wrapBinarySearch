@@ -7,15 +7,15 @@
    1. Return the index of a specific Integer in the upper half or the lower half of the current ArrayList.
    2. Boolean 
    
-      if( low > hi)
+            if( low > hi)
       
       Solution to base case 
       
-      return -2;
+            return -2;
       
       Leftover
       
-      int pageToCheck = (low + hi) / 2;
+            int pageToCheck = (low + hi) / 2;
       
             int comparison =
               findMe.compareTo( list_iAS.get( pageToCheck));
@@ -25,10 +25,10 @@
                 
       Recursive abstraction
       
-      return indexOf_recursive( findMe
+            return indexOf_recursive( findMe
                                              , low
                                              , pageToCheck -1);
                                              
-      return indexOf_recursive( findMe
+            return indexOf_recursive( findMe
                                             , pageToCheck +1
                                             , hi);
